@@ -1,0 +1,5 @@
+k8s
+scripts
+.dockerignore
+Dockerfile
+README.md
