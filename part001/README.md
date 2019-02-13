@@ -8,7 +8,7 @@ git clone https://github.com/tinhtrantrung/k8s.git
 cd gke/part001/scripts
 sh startup.sh
 sh deploy.sh
-sh check-endpoint.sh part001
+sh check-endpoint.sh
 ```
 
 ### To Teardown:
