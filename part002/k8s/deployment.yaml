@@ -1,29 +1,29 @@
 apiVersion: apps/v1
 kind: Deployment # it is a deployment
 metadata:
-  name: part001 # name of the Deployment
+  name: part002 # name of the Deployment
   labels:
     # any Pods with matching labels are included in this Deployment
-    app: part001
+    app: part002
 spec:
   # ReplicaSet specification
   replicas: 3 # we are making 3 Pods
   selector:
     matchLabels:
       # ReplicaSet labels will match Pods with the following labels
-      app: part001
+      app: part002
   template:
     # Pod template
     metadata:
       labels:
         # Pod's labels
-        app: part001
+        app: part002
     spec:
       # Pod specification
       containers:
         # the container(s) in this Pod
-        - name: part001
-          image: gcr.io/PROJECT_NAME/part001-container:latest
+        - name: part002
+          image: gcr.io/PROJECT_NAME/part002-container:latest
           # the readiness probe details
           readinessProbe:
             httpGet: # make an HTTP request
